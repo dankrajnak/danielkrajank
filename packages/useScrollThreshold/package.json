@@ -13,14 +13,12 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
-  },
   "dependencies": {
-    "@danielkrajnak/throttle": "file:../throttle"
+    "@danielkrajnak/throttle": "^0.0.1"
   },
   "scripts": {
     "tsc": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+  },
+  "gitHead": "e647130069593788d4841a3393b2308c760c8522"
 }
