@@ -5,10 +5,12 @@
     "noImplicitAny": false,
     "removeComments": true,
     "noLib": false,
+    "composite": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,
+    "baseUrl": "./packages",    
     "lib": [
       "dom",
       "es6"
@@ -17,5 +19,5 @@
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
-  ]
+  ],
  }

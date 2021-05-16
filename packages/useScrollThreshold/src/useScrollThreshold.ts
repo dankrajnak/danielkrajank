@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import throttle from "../../Services/Throttle/Throttle.service";
+import throttle from "@danielkrajnak/throttle";
 
 export const useScroll = (
   listener: (x0: number) => any,
