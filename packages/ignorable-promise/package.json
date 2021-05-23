@@ -1,0 +1,30 @@
+{
+  "name": "@danielkrajnak/ignorable-promise",
+  "version": "0.0.3",
+  "description": "Create a promise whose then and catch handlers can be deregistered",
+  "author": "Daniel Krajnak <dan.krajnak@gmail.com>",
+  "homepage": "https://github.com/dankrajnak/danielkrajank#readme",
+  "license": "GPL-3.0-or-later",
+  "main": "lib/ignorable-promise.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dankrajnak/danielkrajank.git"
+  },
+  "scripts": {
+    "preversion": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/dankrajnak/danielkrajank/issues"
+  }
+}

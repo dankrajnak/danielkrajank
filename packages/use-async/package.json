@@ -1,0 +1,33 @@
+{
+  "name": "@danielkrajnak/use-async",
+  "version": "0.0.3",
+  "description": "Hook for managing async actions in React",
+  "author": "Daniel Krajnak <dan.krajnak@gmail.com>",
+  "homepage": "https://github.com/dankrajnak/danielkrajank#readme",
+  "license": "GPL-3.0-or-later",
+  "main": "lib/use-async.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "dependencies": {
+    "@danielkrajnak/ignorable-promise": "^0.0.3"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dankrajnak/danielkrajank.git"
+  },
+  "scripts": {
+    "preversion": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/dankrajnak/danielkrajank/issues"
+  }
+}
