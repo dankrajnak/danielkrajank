@@ -21,7 +21,7 @@
     "url": "git+https://github.com/dankrajnak/danielkrajank.git"
   },
   "scripts": {
-    "tsc": "tsc",
+    "preversion": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
