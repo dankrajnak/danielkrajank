@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,6 @@
   },
   "bugs": {
     "url": "https://github.com/dankrajnak/danielkrajank/issues"
-  }
+  },
+  "gitHead": "b8c51e8c5ff3279fd24c7e08b885f7192bf7165c"
 }
