@@ -1,6 +1,6 @@
 {
   "name": "@danielkrajnak/ignorable-promise",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create a promise whose then and catch handlers can be deregistered",
   "author": "Daniel Krajnak <dan.krajnak@gmail.com>",
   "homepage": "https://github.com/dankrajnak/danielkrajank#readme",
