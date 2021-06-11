@@ -5,7 +5,7 @@
   "author": "Daniel Krajnak <dan.krajnak@gmail.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "lib/useScrollThreshold.js",
+  "main": "lib/use-scroll-threshold.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -14,7 +14,7 @@
     "lib"
   ],
   "dependencies": {
-    "@danielkrajnak/throttle": "^0.0.5"
+    "@danielkrajnak/use-throttle": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"

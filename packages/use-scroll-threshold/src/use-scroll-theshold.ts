@@ -1,16 +1,16 @@
 import { useEffect, useRef } from "react";
-import throttle from "@danielkrajnak/throttle";
+import useThrottle from "@danielkrajnak/use-throttle";
 
 export const useScroll = (
   listener: (x0: number) => any,
   throttleAmount = 300
 ): void => {
   const touchStartPosition = useRef<number>();
+  const throttledFunc = useThrottle(
+    (deltaY: number) => listener(deltaY),
+    throttleAmount
+  );
   useEffect(() => {
-    const throttledFunc = throttle(
-      (deltaY: number) => listener(deltaY),
-      throttleAmount
-    );
     const wheelHandler = (e: WheelEvent) => {
       throttledFunc(e.deltaY);
     };
@@ -35,7 +35,7 @@ export const useScroll = (
       window.removeEventListener("wheel", wheelHandler);
       window.removeEventListener("touchmove", touchMoveHandler);
     };
-  }, [listener, throttleAmount]);
+  }, [throttledFunc, throttleAmount]);
 };
 
 export const useScrollThreshold = (
@@ -43,16 +43,11 @@ export const useScrollThreshold = (
   threshold = 0.5,
   coolDown = 1000
 ): void => {
-  const throttledListener = useRef<(val: number) => void>(
-    throttle((val: number) => listener(val), coolDown)
-  );
-  const callback = useRef((val: number) => {
+  useScroll((val: number) => {
     if (val > threshold || val < -threshold) {
-      throttledListener.current(val);
+      listener(val);
     }
-  });
-
-  useScroll(callback.current);
+  }, coolDown);
 };
 
 export default useScrollThreshold;
