@@ -1,6 +1,6 @@
 {
   "name": "@danielkrajnak/use-async",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Hook for managing async actions in React",
   "author": "Daniel Krajnak <dan.krajnak@gmail.com>",
   "homepage": "https://github.com/dankrajnak/danielkrajank#readme",
