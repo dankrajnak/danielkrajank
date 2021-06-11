@@ -2,12 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./lib",
-    "rootDir": "./src"
   },
   "include": [
     "./src"
-  ],
-  "references": [
-    { "path": "../ignorable-promise" }
   ]
  }

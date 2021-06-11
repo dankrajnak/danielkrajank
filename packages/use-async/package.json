@@ -1,6 +1,6 @@
 {
   "name": "@danielkrajnak/use-async",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Hook for managing async actions in React",
   "author": "Daniel Krajnak <dan.krajnak@gmail.com>",
   "homepage": "https://github.com/dankrajnak/danielkrajank#readme",
@@ -24,7 +24,7 @@
     "url": "git+https://github.com/dankrajnak/danielkrajank.git"
   },
   "scripts": {
-    "preversion": "rm -rf lib/*; tsc",
+    "prepublish": "rm -rf lib/*; tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
