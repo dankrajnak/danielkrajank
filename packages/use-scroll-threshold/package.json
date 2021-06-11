@@ -1,6 +1,6 @@
 {
   "name": "@danielkrajnak/use-scroll-threshold",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Util hook for doing stuff when a user scrolls by a certain amount",
   "author": "Daniel Krajnak <dan.krajnak@gmail.com>",
   "homepage": "",
