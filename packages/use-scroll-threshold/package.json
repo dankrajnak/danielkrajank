@@ -20,7 +20,7 @@
     "access": "public"
   },
   "scripts": {
-    "preversion": "tsc",
+    "preversion": "rm -rf lib/*; tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "gitHead": "b8c51e8c5ff3279fd24c7e08b885f7192bf7165c"
